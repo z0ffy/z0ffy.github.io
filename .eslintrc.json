@@ -1,0 +1,14 @@
+{
+  "extends": ["next/core-web-vitals"],
+  "rules": {
+    "indent": ["error", 2],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "tsx": "never",
+        "ts": "never"
+      }
+    ]
+  }
+}

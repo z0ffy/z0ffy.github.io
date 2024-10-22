@@ -1,0 +1,41 @@
+{
+  "name": "z0ffy.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "lint": "next lint",
+    "fix": "eslint --fix ."
+  },
+  "dependencies": {
+    "next": "13.5.3",
+    "next-themes": "^0.2.1",
+    "octokit": "^3.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-markdown": "^9.0.0",
+    "react-syntax-highlighter": "^15.5.0",
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^4.0.0",
+    "remark-github": "^12.0.0",
+    "rss": "^1.2.2",
+    "sakana-widget": "^2.4.3"
+  },
+  "devDependencies": {
+    "@qianxi0410/eslint-config": "^5.3.0",
+    "@types/node": "18.18.1",
+    "@types/react": "18.2.24",
+    "@types/react-dom": "18.2.8",
+    "@types/react-syntax-highlighter": "^15.5.6",
+    "@types/rss": "^0.0.30",
+    "autoprefixer": "^10.4.13",
+    "eslint": "8.39.0",
+    "eslint-config-next": "13.5.3",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4",
+    "typescript": "5.1.6"
+  }
+}
