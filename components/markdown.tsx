@@ -37,6 +37,7 @@ const Hx: HeadingComponent = ({
   children = ''
 }) => {
   switch (level) {
+  case 0:
   case 1:
     return <h1 className="sm:text-4xl text-3xl my-12 mb-6 dark:text-white font-medium"
     >{children}</h1>
