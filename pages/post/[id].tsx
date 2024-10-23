@@ -23,7 +23,7 @@ const PostDetail: NextPageWithLayout<{ post: Post }> = ({ post }) => (
     <br />
     {
       post.reactions.total_count > 0
-        && <Reactions
+        ? <Reactions
           id={post.id}
           nice={post.reactions['+1']}
           bad={post.reactions['-1']}
@@ -33,7 +33,7 @@ const PostDetail: NextPageWithLayout<{ post: Post }> = ({ post }) => (
           laugh={post.reactions.laugh}
           confused={post.reactions.confused}
           heart={post.reactions.heart}
-        />
+        /> : null
     }
 
     <Markdown className="font-normal">
