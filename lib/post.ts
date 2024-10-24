@@ -9,9 +9,10 @@ export const fetchPaths = async () => {
     repo: process.env.REPO!,
     labels: process.env.LABELS!,
     per_page: 100,
+    state: 'all'
   })
 
-  return posts.map(post => ({
+  return posts.map((post: any) => ({
     params: {
       id: post.title,
     },
@@ -25,6 +26,7 @@ export const fetchPosts = async () => {
     repo: process.env.REPO!,
     labels: process.env.LABELS!,
     per_page: 100,
+    state: 'all'
   })
 
   const posts: Post[] = []
@@ -40,7 +42,7 @@ export const fetchPosts = async () => {
       reactions: {
         ...p.reactions!,
       },
-      labels: p.labels!.map((l) => {
+      labels: p.labels!.map((l: { name: string }) => {
         const r = l as { name: string }
         return r.name
       }),
@@ -104,7 +106,7 @@ export const fetchPostsByTag = async (tag: string) => {
       reactions: {
         ...p.reactions!,
       },
-      labels: p.labels!.map((l) => {
+      labels: p.labels!.map((l: { name: string }) => {
         const r = l as { name: string }
         return r.name
       }),
