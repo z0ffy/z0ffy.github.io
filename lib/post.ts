@@ -65,6 +65,7 @@ export const fetchTagPaths = async () => {
     repo: process.env.REPO!,
     labels: process.env.LABELS!,
     per_page: 100,
+    state: 'all'
   })
 
   const tags = new Set<string>()
@@ -92,6 +93,7 @@ export const fetchPostsByTag = async (tag: string) => {
     repo: process.env.REPO!,
     labels: [process.env.LABELS!.split(','), tag].join(','),
     per_page: 100,
+    state: 'all'
   })
 
   const posts: Post[] = []
