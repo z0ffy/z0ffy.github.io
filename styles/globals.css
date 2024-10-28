@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'en';
-    src: url('../ttf/en.ttf');
+  font-family: 'en';
+  src: url('../ttf/en.ttf');
 }
 

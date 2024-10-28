@@ -5,7 +5,7 @@ import Header from '../header'
 
 import Sakana from '../sakana'
 
-import type { ReactNode } from 'react'
+import React, { ReactNode } from 'react'
 
 const Layout: React.FC<{ middle: ReactNode }>
 = ({ middle }) => (

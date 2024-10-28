@@ -14,7 +14,7 @@ const nextConfig = {
     // config
     comment: 'true', // true or false
     theme: 'both', // 'light' or 'dark' or 'both'
-    rss: 'false', // true or false
+    rss: 'true', // true or false
     back2top: 'true', // true or false
     mail: 'z0ffy@icloud.com', // your email
     twitter: '', // your twitter

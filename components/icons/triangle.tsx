@@ -1,4 +1,4 @@
-import React, { SVGProps } from 'react'
+import React, {SVGProps} from 'react'
 
 const Triangle: React.FC<SVGProps<SVGSVGElement>> = properties => (
   <svg

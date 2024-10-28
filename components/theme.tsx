@@ -9,7 +9,6 @@ const Theme = () => {
     setTheme
   } = useTheme()
 
-  // eslint-disable-next-line react/jsx-no-useless-fragment
   if (process.env.theme !== 'both') return <></>
 
   return (

@@ -2,13 +2,13 @@ import Comments from '../../components/comments'
 import Layout from '../../components/layout'
 import Markdown from '../../components/markdown'
 import Reactions from '../../components/reactions'
-import { fetchPaths, fetchPost, formatDate } from '../../lib'
+import {fetchPaths, fetchPost, formatDate} from '../../lib'
 
 import Link from 'next/link'
 
-import type { NextPageWithLayout, Post } from 'gossip'
+import type {NextPageWithLayout, Post} from 'gossip'
 
-const PostDetail: NextPageWithLayout<{ post: Post }> = ({ post }) => (
+const PostDetail: NextPageWithLayout<{ post: Post }> = ({post}) => (
   <div>
     <div className="flex flex-col mb-2">
       <div className="text-4xl sm:text-4xl font-medium dark:text-gray-200">
@@ -20,7 +20,7 @@ const PostDetail: NextPageWithLayout<{ post: Post }> = ({ post }) => (
       </div>
     </div>
 
-    <br />
+    <br/>
     {
       post.reactions.total_count > 0
         ? <Reactions
@@ -39,16 +39,17 @@ const PostDetail: NextPageWithLayout<{ post: Post }> = ({ post }) => (
     <Markdown className="font-normal">
       {post.content}
     </Markdown>
-    <br />
-    <Comments issueNumber={post.id} />
+    <br/>
+    <Comments issueNumber={post.id}/>
 
-    <Link href="/" className="float-right mt-10 sm:text-2xl text-xl text-gray-500 hover:text-black transition-colors duration-200 dark:text-gray-400 dark:hover:text-gray-100">
-     cd ..
+    <Link href="/"
+      className="float-right mt-10 sm:text-2xl text-xl text-gray-500 hover:text-black transition-colors duration-200 dark:text-gray-400 dark:hover:text-gray-100">
+      cd ..
     </Link>
   </div>
 )
 
-PostDetail.getLayout = page => <Layout middle={page} />
+PostDetail.getLayout = page => <Layout middle={page}/>
 
 // get all the posts id from the github issues
 export const getStaticPaths = async () => ({
@@ -56,8 +57,8 @@ export const getStaticPaths = async () => ({
   fallback: false,
 })
 
-export const getStaticProps = async ({ params }: { params: { id: string } }) => {
-  const { id } = params
+export const getStaticProps = async ({params}: { params: { id: string } }) => {
+  const {id} = params
 
   const post = await fetchPost(id)
 

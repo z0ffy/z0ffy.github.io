@@ -2,16 +2,13 @@ import {useRouter} from 'next/router'
 
 import React, {MouseEventHandler, SVGProps} from 'react'
 
-const Home: React.FC<SVGProps<SVGAElement>> = ({
-  width,
-  height
-}) => {
+const Home: React.FC<SVGProps<SVGAElement>> = ({width, height}) => {
   const router = useRouter()
 
   // don't use window.push because it will cause a re-render
   const handleClick: MouseEventHandler<SVGSVGElement> = (event) => {
     event.preventDefault()
-    router.push('/')
+    router.push('/').then()
   }
 
   return (

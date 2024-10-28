@@ -1,11 +1,11 @@
 import RSS from 'rss'
 
-import { writeFileSync } from 'node:fs'
+import {writeFileSync} from 'node:fs'
 
-import type { Post, User } from 'gossip'
+import type {Post, User} from 'gossip'
 
 const genRSS = (posts: Post[], user: User) => {
-  const siteURL = 'https://github.com/z0ffy/z0ffy.github.io/gossip'
+  const siteURL = 'https://zoffy.me'
 
   const feed = new RSS({
     title: process.env.OWNER!,
@@ -28,7 +28,7 @@ const genRSS = (posts: Post[], user: User) => {
     })
   }
 
-  writeFileSync('./public/feed.xml', feed.xml({ indent: true }))
+  writeFileSync('./public/feed.xml', feed.xml({indent: true}))
 }
 
 export default genRSS

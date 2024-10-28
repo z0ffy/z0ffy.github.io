@@ -1,4 +1,4 @@
-import type { Post } from 'gossip'
+import type {Post} from 'gossip'
 
 // format date string
 export const formatDate = (date: string) => {

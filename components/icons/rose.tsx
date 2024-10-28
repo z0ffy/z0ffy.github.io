@@ -1,8 +1,8 @@
-import { useRouter } from 'next/router'
+import {useRouter} from 'next/router'
 
-import React, { MouseEventHandler, SVGProps } from 'react'
+import React, {MouseEventHandler, SVGProps} from 'react'
 
-const Rose: React.FC<SVGProps<SVGSVGElement>> = ({ width, height }) => {
+const Rose: React.FC<SVGProps<SVGSVGElement>> = ({width, height}) => {
   const router = useRouter()
 
   // don't use window.push because it will cause a re-render

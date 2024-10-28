@@ -1,9 +1,8 @@
-import { isGithubChannel, isSpecialRepo } from '../../lib'
+import {isGithubChannel, isSpecialRepo} from '../../lib'
 
-import React, { SVGProps } from 'react'
+import React, {SVGProps} from 'react'
 
-const RSS: React.FC<SVGProps<SVGSVGElement>> = ({ width, height }) => {
-  // eslint-disable-next-line react/jsx-no-useless-fragment
+const RSS: React.FC<SVGProps<SVGSVGElement>> = ({width, height}) => {
   if (process.env.rss !== 'true') return <></>
 
   let href = '/feed.xml'

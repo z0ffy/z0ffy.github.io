@@ -1,6 +1,6 @@
-import React, { SVGProps } from 'react'
+import React, {SVGProps} from 'react'
 
-const Twitter: React.FC<SVGProps<SVGSVGElement>> = ({ width, height }) => (
+const Twitter: React.FC<SVGProps<SVGSVGElement>> = ({width, height}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
