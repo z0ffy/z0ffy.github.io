@@ -1,3 +1,4 @@
+import React from "react";
 import Theme from './theme'
 
 import Link from 'next/link'

@@ -1,12 +1,12 @@
-import { useTheme } from 'next-themes'
-import { useEffect, useRef } from 'react'
+import {useTheme} from 'next-themes'
+import React, {useEffect, useRef} from 'react'
 
 interface Properties {
   issueNumber: number
 }
 
-const Comments: React.FC<Properties> = ({ issueNumber }) => {
-  const { theme } = useTheme()
+const Comments: React.FC<Properties> = ({issueNumber}) => {
+  const {theme} = useTheme()
   const elementReference = useRef<HTMLDivElement>(null)
   const t = theme === 'dark' ? 'github-dark' : 'github-light'
   const className = '.utterances-frame'
@@ -33,11 +33,14 @@ const Comments: React.FC<Properties> = ({ issueNumber }) => {
 
       if (!iframe || process.env.comment !== 'true') return
 
-      iframe?.contentWindow?.postMessage({ type: 'set-theme', theme: t }, 'https://utteranc.es')
+      iframe?.contentWindow?.postMessage({
+        type: 'set-theme',
+        theme: t
+      }, 'https://utteranc.es')
     }
   }, [t])
 
-  return <div ref={elementReference} />
+  return <div ref={elementReference}/>
 }
 
 export default Comments

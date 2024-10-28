@@ -1,8 +1,11 @@
-import { useRouter } from 'next/router'
+import {useRouter} from 'next/router'
 
-import type { MouseEventHandler, SVGProps } from 'react'
+import React, {MouseEventHandler, SVGProps} from 'react'
 
-const Home: React.FC<SVGProps<SVGAElement>> = ({ width, height }) => {
+const Home: React.FC<SVGProps<SVGAElement>> = ({
+  width,
+  height
+}) => {
   const router = useRouter()
 
   // don't use window.push because it will cause a re-render

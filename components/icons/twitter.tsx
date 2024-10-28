@@ -1,4 +1,4 @@
-import type { SVGProps } from 'react'
+import React, { SVGProps } from 'react'
 
 const Twitter: React.FC<SVGProps<SVGSVGElement>> = ({ width, height }) => (
   <svg

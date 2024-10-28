@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 
-import type { MouseEventHandler, SVGProps } from 'react'
+import React, { MouseEventHandler, SVGProps } from 'react'
 
 const Rose: React.FC<SVGProps<SVGSVGElement>> = ({ width, height }) => {
   const router = useRouter()

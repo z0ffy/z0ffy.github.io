@@ -1,10 +1,10 @@
 import cli from './cli'
 
-import type { Post } from 'gossip'
+import type {Post} from 'gossip'
 
 // fetch the static ids
 export const fetchPaths = async () => {
-  const { data: posts } = await cli.rest.issues.listForRepo({
+  const {data: posts} = await cli.rest.issues.listForRepo({
     owner: process.env.OWNER!,
     repo: process.env.REPO!,
     labels: process.env.LABELS!,
@@ -21,7 +21,7 @@ export const fetchPaths = async () => {
 
 // fetch posts list
 export const fetchPosts = async () => {
-  const { data } = await cli.rest.issues.listForRepo({
+  const {data} = await cli.rest.issues.listForRepo({
     owner: process.env.OWNER!,
     repo: process.env.REPO!,
     labels: process.env.LABELS!,
@@ -60,7 +60,7 @@ export const fetchPost = async (title: string) => {
 
 // fetch tags list
 export const fetchTagPaths = async () => {
-  const { data } = await cli.rest.issues.listForRepo({
+  const {data} = await cli.rest.issues.listForRepo({
     owner: process.env.OWNER!,
     repo: process.env.REPO!,
     labels: process.env.LABELS!,
@@ -79,16 +79,17 @@ export const fetchTagPaths = async () => {
 
   const specialTags = process.env.LABELS!.split(',')
 
-  return [...tags].filter(tag => !specialTags.includes(tag)).map(tag => ({
-    params: {
-      id: tag,
-    },
-  }))
+  return [...tags].filter(tag => !specialTags.includes(tag))
+    .map(tag => ({
+      params: {
+        id: tag,
+      },
+    }))
 }
 
 // fetch posts list by tag
 export const fetchPostsByTag = async (tag: string) => {
-  const { data } = await cli.rest.issues.listForRepo({
+  const {data} = await cli.rest.issues.listForRepo({
     owner: process.env.OWNER!,
     repo: process.env.REPO!,
     labels: [process.env.LABELS!.split(','), tag].join(','),

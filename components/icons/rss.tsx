@@ -1,6 +1,6 @@
 import { isGithubChannel, isSpecialRepo } from '../../lib'
 
-import type { SVGProps } from 'react'
+import React, { SVGProps } from 'react'
 
 const RSS: React.FC<SVGProps<SVGSVGElement>> = ({ width, height }) => {
   // eslint-disable-next-line react/jsx-no-useless-fragment

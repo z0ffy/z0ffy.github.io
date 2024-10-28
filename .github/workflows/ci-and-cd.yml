@@ -96,9 +96,6 @@ jobs:
           OWNER: ${{ github.actor }}
           REPO: ${{ github.event.repository.name }}
 
-      - name: Run export
-        run: pnpm run export
-
       - name: Run deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

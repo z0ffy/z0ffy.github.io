@@ -1,4 +1,4 @@
-import type { SVGProps } from 'react'
+import React, { SVGProps } from 'react'
 
 const Github: React.FC<SVGProps<SVGAElement>> = ({ children, width, height }) => (
   <svg
