@@ -8,10 +8,10 @@ const Sakana = () => {
 
   useEffect(() => {
     new SakanaWidget({
-      character: 'takina',
+      character: Math.random() < 0.6 ? 'takina' : 'chisato',
       controls: false,
-      stroke: {color: theme === 'dark' ? '#333333' : '#e6e6e6'}
-    }).mount('#sakana-widget')
+      stroke: {color: theme === 'dark' ? '#333333' : '#e6e6e6'},
+    }).setState({ i: 0.001, d: 1 }).mount('#sakana-widget')
   }, [theme])
 
   return (
