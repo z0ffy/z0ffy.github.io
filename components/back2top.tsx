@@ -11,8 +11,7 @@ const Back2Top = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > window.innerHeight) setShow(true)
-      else setShow(false)
+      setShow(window.scrollY > window.innerHeight)
     }
 
     window.addEventListener('scroll', handleScroll)
