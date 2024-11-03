@@ -12,7 +12,7 @@ const fetchUser = async () => {
     login: data.login,
     nick_name: data.name || data.login,
     avatar_url: data.avatar_url,
-    bio: data.bio ?? 'No fear of words, no fear of years.',
+    bio: data.bio ?? '',
   }
 
   return user
