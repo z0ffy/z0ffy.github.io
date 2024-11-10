@@ -11,13 +11,17 @@ const compat = new FlatCompat({
   allConfig: js.configs.all
 });
 
-export default [...compat.extends("next/core-web-vitals"), {
-  rules: {
-    indent: ["error", 2],
+export default [
+  ...compat.extends("next/core-web-vitals"),
+  { ignores: [".next/*", "eslint.config.mjs"] },
+  {
+    rules: {
+      indent: ["error", 2],
 
-    "import/extensions": ["error", "ignorePackages", {
-      tsx: "never",
-      ts: "never",
-    }],
-  },
-}];
+      "import/extensions": ["error", "ignorePackages", {
+        tsx: "never",
+        ts: "never",
+      }],
+    },
+  }
+];
