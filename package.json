@@ -23,18 +23,18 @@
     "sakana-widget": "^2.7.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.1.0",
-    "@eslint/js": "^9.14.0",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.15.0",
     "@types/node": "22.9.0",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
     "@types/react-syntax-highlighter": "^15.5.13",
     "@types/rss": "^0.0.32",
     "autoprefixer": "^10.4.20",
-    "eslint": "9.14.0",
+    "eslint": "9.15.0",
     "eslint-config-next": "^15.0.3",
     "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.14",
+    "tailwindcss": "^3.4.15",
     "typescript": "5.6.3"
   }
 }
