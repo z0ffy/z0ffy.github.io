@@ -4,11 +4,18 @@
         <description><![CDATA[No fear of words, no fear of years.]]></description>
         <link>https://zoffy.me</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 12 Nov 2024 12:39:31 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 18 Nov 2024 10:17:13 GMT</lastBuildDate>
         <atom:link href="https://zoffy.me/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 12 Nov 2024 12:39:31 GMT</pubDate>
+        <pubDate>Mon, 18 Nov 2024 10:17:13 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2024, z0ffy]]></copyright>
         <language><![CDATA[zh-CN]]></language>
+        <item>
+            <title><![CDATA[【Wasm】SharedArrayBuffer(SAB) is not defined]]></title>
+            <description><![CDATA[前端]]></description>
+            <link>https://zoffy.me/post/【Wasm】SharedArrayBuffer(SAB) is not defined</link>
+            <guid isPermaLink="true">https://zoffy.me/post/【Wasm】SharedArrayBuffer(SAB) is not defined</guid>
+            <pubDate>Mon, 18 Nov 2024 10:16:31 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[【React hack】在React中模拟触发输入]]></title>
             <description><![CDATA[前端]]></description>
