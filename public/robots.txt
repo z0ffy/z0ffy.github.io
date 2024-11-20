@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://zoffy.me
+
+# Sitemaps
+Sitemap: https://zoffy.me/sitemap.xml
