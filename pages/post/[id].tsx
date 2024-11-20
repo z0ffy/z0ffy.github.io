@@ -1,15 +1,27 @@
-import Comments from '../../components/comments'
-import Layout from '../../components/layout'
-import Markdown from '../../components/markdown'
-import Reactions from '../../components/reactions'
-import {fetchPaths, fetchPost, formatDate} from '../../lib'
+import Comments from '../../components/comments';
+import Layout from '../../components/layout';
+import Markdown from '../../components/markdown';
+import Reactions from '../../components/reactions';
+import { fetchPaths, fetchPost, formatDate } from '../../lib';
 
-import Link from 'next/link'
+import Link from 'next/link';
+import Head from 'next/head';
 
-import type {NextPageWithLayout, Post} from 'gossip'
+import type { NextPageWithLayout, Post } from 'gossip';
 
-const PostDetail: NextPageWithLayout<{ post: Post }> = ({post}) => (
+const PostDetail: NextPageWithLayout<{ post: Post }> = ({ post }) => (
   <div>
+    <Head>
+      <title>{post.title}</title>
+      <meta name="description" content={post.content.slice(0, 150)}/>
+      <meta name="keywords" content={post.title}/>
+      <meta name="author" content="zoffy"/>
+      <meta property="og:title" content={post.title}/>
+      <meta property="og:description" content={post.content.slice(0, 150)}/>
+      <meta property="og:type" content="article"/>
+      <meta property="og:url" content="https://zoffy.me"/>
+    </Head>
+
     <div className="flex flex-col mb-2">
       <div className="text-4xl sm:text-4xl font-medium dark:text-gray-200">
         {post.title}
@@ -47,26 +59,26 @@ const PostDetail: NextPageWithLayout<{ post: Post }> = ({post}) => (
       cd ..
     </Link>
   </div>
-)
+);
 
-PostDetail.getLayout = page => <Layout middle={page}/>
+PostDetail.getLayout = page => <Layout middle={page}/>;
 
 // get all the posts id from the github issues
 export const getStaticPaths = async () => ({
   paths: await fetchPaths(),
   fallback: false,
-})
+});
 
-export const getStaticProps = async ({params}: { params: { id: string } }) => {
-  const {id} = params
+export const getStaticProps = async ({ params }: { params: { id: string } }) => {
+  const { id } = params;
 
-  const post = await fetchPost(id)
+  const post = await fetchPost(id);
 
   return {
     props: {
       post,
     },
-  }
-}
+  };
+};
 
-export default PostDetail
+export default PostDetail;
