@@ -1,12 +1,13 @@
-import {isGithubChannel, isSpecialRepo} from '../lib'
+import { isGithubChannel, isSpecialRepo } from '../lib';
 
-import {Head, Html, Main, NextScript} from 'next/document'
+import { Head, Html, Main, NextScript } from 'next/document';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
-import type {NextPage} from 'next'
+import type { NextPage } from 'next';
 
 const Document: NextPage = () => {
-  let href = '/favicon.ico'
-  if (isGithubChannel() && !isSpecialRepo()) href = './favicon.ico'
+  let href = '/favicon.ico';
+  if (isGithubChannel() && !isSpecialRepo()) href = './favicon.ico';
 
   return (
     <Html lang="zh-CN" id="html">
@@ -17,8 +18,10 @@ const Document: NextPage = () => {
         <Main/>
         <NextScript/>
       </body>
-    </Html>
-  )
-}
 
-export default Document
+      <GoogleAnalytics gaId="G-Q63RMLHY5H"/>
+    </Html>
+  );
+};
+
+export default Document;
