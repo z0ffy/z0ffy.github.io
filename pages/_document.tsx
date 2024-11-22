@@ -1,7 +1,6 @@
 import { isGithubChannel, isSpecialRepo } from '../lib';
 
 import { Head, Html, Main, NextScript } from 'next/document';
-import { GoogleAnalytics } from '@next/third-parties/google';
 
 import type { NextPage } from 'next';
 
@@ -18,8 +17,6 @@ const Document: NextPage = () => {
         <Main/>
         <NextScript/>
       </body>
-
-      <GoogleAnalytics gaId="G-Q63RMLHY5H"/>
     </Html>
   );
 };
