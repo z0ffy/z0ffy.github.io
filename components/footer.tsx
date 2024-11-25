@@ -12,7 +12,7 @@ const Footer = () => (
       <Github width="1.8em" height="1.8em"/>
     </div>
 
-    <div className="flex items-center mb-10 font-en justify-center">
+    <div className="flex items-center flex-wrap mb-10 font-en justify-center">
       <span>©{new Date().getFullYear()}.&nbsp;</span>
       <span>All rights reserved by&nbsp;</span>
       <a href={`https://github.com/${process.env.OWNER}`}
