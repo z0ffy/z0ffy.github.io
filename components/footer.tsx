@@ -1,7 +1,7 @@
-import Github from './icons/github'
-import Mail from './icons/mail'
-import RSS from './icons/rss'
-import Twitter from './icons/twitter'
+import Github from './icons/github';
+import Mail from './icons/mail';
+import RSS from './icons/rss';
+import Twitter from './icons/twitter';
 
 const Footer = () => (
   <footer className="container mx-auto text-center text-gray-700 dark:text-gray-400">
@@ -17,13 +17,9 @@ const Footer = () => (
       <span>All rights reserved by&nbsp;</span>
       <a href={`https://github.com/${process.env.OWNER}`}
         className="text-blue-500 hover:text-blue-900 transition-colors duration-300">{process.env.OWNER}</a>
-      <span>.&nbsp;</span>
-      <span>Powered by&nbsp;</span>
-      <a href="https://github.com/qianxi0410/gossip"
-        className="text-blue-500 hover:text-blue-900 transition-colors duration-300">Gossip</a>
       <span>.</span>
     </div>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;
