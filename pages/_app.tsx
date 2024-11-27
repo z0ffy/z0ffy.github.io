@@ -25,7 +25,7 @@ const Gossip = ({ Component, pageProps }: AppPropertiesWithLayout) => {
         {getLayout(<Component {...pageProps} />)}
       </ThemeProvider>
 
-      <GoogleAnalytics gaId="G-Q63RMLHY5H"/>
+      <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_ID!} />
     </>
   );
 };

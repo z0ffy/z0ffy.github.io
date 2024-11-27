@@ -9,6 +9,7 @@ const nextConfig = {
   env: {
     OWNER: process.env.OWNER,
     REPO: process.env.REPO,
+    GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
     LABELS: 'published',
 
     // config
