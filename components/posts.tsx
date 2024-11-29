@@ -1,15 +1,15 @@
-import React from "react";
-import {formatDateShort, groupByDate} from '../lib'
+import React from 'react';
+import { formatDateShort, groupByDate } from '../lib';
 
-import Link from 'next/link'
+import Link from 'next/link';
 
-import type {Post} from 'gossip'
+import type { Post } from 'gossip';
 
-const Tags = ({tags}: { tags: string[] }) => {
-  const specialTags = process.env.LABELS!.split(',')
-  const isSpecialTag = (tag: string) => specialTags.includes(tag)
+const Tags = ({ tags }: { tags: string[] }) => {
+  const specialTags = process.env.LABELS!.split(',');
+  const isSpecialTag = (tag: string) => specialTags.includes(tag);
 
-  tags = tags.filter(tag => !isSpecialTag(tag))
+  tags = tags.filter(tag => !isSpecialTag(tag));
 
   return (
     <div className="xl:inline-block hidden space-x-3">
@@ -21,10 +21,10 @@ const Tags = ({tags}: { tags: string[] }) => {
         </Link>
       ))}
     </div>
-  )
-}
+  );
+};
 
-const PostItem: React.FC<{ post: Post }> = ({post}) => (
+const PostItem: React.FC<{ post: Post }> = ({ post }) => (
   <div className="flex flex-row gap-2 flex-wrap mt-1 justify-between">
     <div className="space-x-2">
       <Link href={`/post/${post.title}`}
@@ -35,20 +35,20 @@ const PostItem: React.FC<{ post: Post }> = ({post}) => (
     </div>
     <span className="text-lg self-center">{formatDateShort(post.created_at)}</span>
   </div>
-)
+);
 
 interface BlockProperties {
-  year: string
-  items: Post[]
+  year: string;
+  items: Post[];
 }
 
-const PostBlock: React.FC<BlockProperties> = ({year, items}) => {
+const PostBlock: React.FC<BlockProperties> = ({ year, items }) => {
   // get year of now
-  const now = new Date()
-  const currentYear = now.getFullYear()
+  const now = new Date();
+  const currentYear = now.getFullYear();
 
   // if year is current year, don't show year
-  const showYear = year !== currentYear.toString()
+  const showYear = year !== currentYear.toString();
 
   return (
     <div className="flex flex-col mb-10">
@@ -58,16 +58,16 @@ const PostBlock: React.FC<BlockProperties> = ({year, items}) => {
         <PostItem key={item.id} post={item}/>
       ))}
     </div>
-  )
-}
+  );
+};
 
-const Posts: React.FC<{ posts: Post[] }> = ({posts}) => {
-  const map = groupByDate(posts)
+const Posts: React.FC<{ posts: Post[] }> = ({ posts }) => {
+  const map = groupByDate(posts);
 
   if (map.size === 0) {
     return (
       <div className="text-xl">No posts found. :D</div>
-    )
+    );
   }
 
   return (
@@ -78,7 +78,7 @@ const Posts: React.FC<{ posts: Post[] }> = ({posts}) => {
         ))
       }
     </>
-  )
-}
+  );
+};
 
-export default Posts
+export default Posts;

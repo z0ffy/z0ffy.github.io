@@ -1,33 +1,33 @@
-import Layout from '../components/layout'
-import Posts from '../components/posts'
-import {fetchPosts, fetchUser} from '../lib'
+import Layout from '../components/layout';
+import Posts from '../components/posts';
+import { fetchPosts, fetchUser } from '../lib';
 
-import genRSS from '../lib/rss'
+import genRSS from '../lib/rss';
 
-import {useTheme} from 'next-themes'
+import { useTheme } from 'next-themes';
 
-import Image from 'next/image'
+import Image from 'next/image';
 
-import type {NextPageWithLayout, Post, User} from 'gossip'
-import type {GetStaticProps} from 'next'
+import type { NextPageWithLayout, Post, User } from 'gossip';
+import type { GetStaticProps } from 'next';
 
 export const getStaticProps: GetStaticProps = async () => {
-  const [user, posts] = await Promise.all([fetchUser(), fetchPosts()])
+  const [user, posts] = await Promise.all([fetchUser(), fetchPosts()]);
 
-  if (process.env.rss === 'true') genRSS(posts, user)
+  if (process.env.rss === 'true') genRSS(posts, user);
 
   return {
     props: {
       user,
       posts,
     },
-  }
-}
+  };
+};
 
-const Index: NextPageWithLayout<{ posts: Post[]; user: User }> = ({posts, user}) => {
-  const {setTheme} = useTheme()
+const Index: NextPageWithLayout<{ posts: Post[]; user: User }> = ({ posts, user }) => {
+  const { setTheme } = useTheme();
 
-  if (process.env.theme !== 'both') setTheme(process.env.theme || 'dark')
+  if (process.env.theme !== 'both') setTheme(process.env.theme || 'dark');
 
   return (
     <div>
@@ -44,9 +44,9 @@ const Index: NextPageWithLayout<{ posts: Post[]; user: User }> = ({posts, user})
       </div>
     </div>
 
-  )
-}
+  );
+};
 
-Index.getLayout = page => <Layout middle={page}/>
+Index.getLayout = page => <Layout middle={page}/>;
 
-export default Index
+export default Index;

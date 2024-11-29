@@ -1,8 +1,8 @@
-import Layout from '../components/layout'
+import Layout from '../components/layout';
 
-import Link from 'next/link'
+import Link from 'next/link';
 
-import type {NextPageWithLayout} from 'gossip'
+import type { NextPageWithLayout } from 'gossip';
 
 const NotFound: NextPageWithLayout = () => (
   <div className="flex flex-col xl:flex-row xl:mt-56 mt-28 xl:space-x-5 space-y-2 font-en">
@@ -14,8 +14,8 @@ const NotFound: NextPageWithLayout = () => (
       Click <Link href="/" className="text-blue-600">here</Link> to go back to the home page.
     </div>
   </div>
-)
+);
 
-NotFound.getLayout = page => <Layout middle={page}/>
+NotFound.getLayout = page => <Layout middle={page}/>;
 
-export default NotFound
+export default NotFound;
