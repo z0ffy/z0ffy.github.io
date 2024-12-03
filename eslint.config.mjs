@@ -11,13 +11,13 @@ const compat = new FlatCompat({
   allConfig: js.configs.all
 });
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default [
   ...compat.extends("next/core-web-vitals"),
-  { ignores: [".next/*", "eslint.config.mjs"] },
   {
+    files: ['**/*.ts', '**/*.tsx'],
     rules: {
       indent: ["error", 2],
-
       "import/extensions": ["error", "ignorePackages", {
         tsx: "never",
         ts: "never",
