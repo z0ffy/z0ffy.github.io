@@ -4,23 +4,30 @@
         <description><![CDATA[No fear of words, no fear of years.]]></description>
         <link>https://zoffy.me</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 30 Dec 2024 10:25:09 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 Jan 2025 17:32:39 GMT</lastBuildDate>
         <atom:link href="https://zoffy.me/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 30 Dec 2024 10:25:09 GMT</pubDate>
-        <copyright><![CDATA[All rights reserved 2024, z0ffy]]></copyright>
+        <pubDate>Wed, 01 Jan 2025 17:32:39 GMT</pubDate>
+        <copyright><![CDATA[All rights reserved 2025, z0ffy]]></copyright>
         <language><![CDATA[zh-CN]]></language>
         <item>
-            <title><![CDATA[【OSS】前端直传oss]]></title>
+            <title><![CDATA[【小程序】播放 pcm 流]]></title>
             <description><![CDATA[前端]]></description>
-            <link>https://zoffy.me/post/【OSS】前端直传oss</link>
-            <guid isPermaLink="true">https://zoffy.me/post/【OSS】前端直传oss</guid>
+            <link>https://zoffy.me/post/【小程序】播放 pcm 流</link>
+            <guid isPermaLink="true">https://zoffy.me/post/【小程序】播放 pcm 流</guid>
+            <pubDate>Wed, 01 Jan 2025 17:32:02 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[【OSS】前端直传 oss]]></title>
+            <description><![CDATA[前端]]></description>
+            <link>https://zoffy.me/post/【OSS】前端直传 oss</link>
+            <guid isPermaLink="true">https://zoffy.me/post/【OSS】前端直传 oss</guid>
             <pubDate>Tue, 03 Dec 2024 09:20:59 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[【更新提醒】Web实现更新提醒]]></title>
+            <title><![CDATA[【更新提醒】Web 实现更新提醒]]></title>
             <description><![CDATA[前端]]></description>
-            <link>https://zoffy.me/post/【更新提醒】Web实现更新提醒</link>
-            <guid isPermaLink="true">https://zoffy.me/post/【更新提醒】Web实现更新提醒</guid>
+            <link>https://zoffy.me/post/【更新提醒】Web 实现更新提醒</link>
+            <guid isPermaLink="true">https://zoffy.me/post/【更新提醒】Web 实现更新提醒</guid>
             <pubDate>Tue, 26 Nov 2024 09:54:21 GMT</pubDate>
         </item>
         <item>
