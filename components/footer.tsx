@@ -6,10 +6,10 @@ import Twitter from './icons/twitter';
 const Footer = () => (
   <footer className="container mx-auto text-center text-gray-700 dark:text-gray-400">
     <div className="flex flex-row justify-center mb-5 space-x-5">
-      <RSS width="1.8em" height="1.8em"/>
-      {process.env.mail && <Mail width="1.8em" height="1.8em"/>}
-      {process.env.twitter && <Twitter width="1.8em" height="1.8em"/>}
-      <Github width="1.8em" height="1.8em"/>
+      <RSS width="1.8em" height="1.8em" />
+      {process.env.mail && <Mail width="1.8em" height="1.8em" />}
+      {process.env.twitter && <Twitter width="1.8em" height="1.8em" />}
+      <Github width="1.8em" height="1.8em" />
     </div>
 
     <div className="flex items-center flex-wrap mb-10 font-en justify-center">

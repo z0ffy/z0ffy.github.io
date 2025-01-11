@@ -15,9 +15,9 @@ const Header: React.FC = () => {
   return (
     <header>
       <div className="my-10 flex self-center flex-row justify-between">
-        {isHome ? <div/> : backIcon}
+        {isHome ? <div /> : backIcon}
         <div className="self-center text-sm sm:text-lg">
-          <Theme/>
+          <Theme />
         </div>
       </div>
     </header>

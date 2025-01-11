@@ -11,11 +11,11 @@ const Document: NextPage = () => {
   return (
     <Html lang="zh-CN" id="html">
       <Head>
-        <link rel="shortcut icon" href={href}/>
+        <link rel="shortcut icon" href={href} />
       </Head>
       <body className="dark:bg-black bg-slate-50">
-        <Main/>
-        <NextScript/>
+        <Main />
+        <NextScript />
       </body>
     </Html>
   );

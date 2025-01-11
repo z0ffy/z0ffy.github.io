@@ -31,7 +31,7 @@ const PostItem: React.FC<{ post: Post }> = ({ post }) => (
         className="cursor-pointer text-xl dark:hover:text-white dark:text-gray-400 hover:text-gray-600 duration-200">
         {post.title}
       </Link>
-      <Tags tags={post.labels}/>
+      <Tags tags={post.labels} />
     </div>
     <span className="text-lg self-center">{formatDateShort(post.created_at)}</span>
   </div>
@@ -55,7 +55,7 @@ const PostBlock: React.FC<BlockProperties> = ({ year, items }) => {
       {showYear && <div
         className="sm:text-3xl text-2xl font-medium sm:my-3 my-1 italic text-gray-500 dark:text-gray-100">{year}</div>}
       {items.map(item => (
-        <PostItem key={item.id} post={item}/>
+        <PostItem key={item.id} post={item} />
       ))}
     </div>
   );
@@ -74,7 +74,7 @@ const Posts: React.FC<{ posts: Post[] }> = ({ posts }) => {
     <>
       {
         [...map].map(([year, items]) => (
-          <PostBlock key={year} year={year} items={items}/>
+          <PostBlock key={year} year={year} items={items} />
         ))
       }
     </>
