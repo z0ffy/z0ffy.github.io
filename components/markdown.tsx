@@ -146,7 +146,7 @@ const Del: React.FC<Pick<DetailedHTMLProps<DelHTMLAttributes<HTMLModElement>, HT
   ...properties
 }) => (
   <span {...properties}
-    className="bg-slate-50 text-slate-50 hover:text-black duration-500 dark:text-black dark:bg-black hover:dark:text-gray-200 hover:dark:bg-black cursor-pointer"
+    className="bg-slate-50 text-slate-50 hover:text-black duration-500 dark:text-black dark:bg-black dark:hover:text-gray-200 dark:hover:bg-black cursor-pointer"
   >{children}</span>
 )
 
