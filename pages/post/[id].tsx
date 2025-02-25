@@ -13,13 +13,13 @@ const PostDetail: NextPageWithLayout<{ post: Post }> = ({ post }) => (
   <div>
     <Head>
       <title>{post.title}</title>
-      <meta name="description" content={post.content.slice(0, 150)}/>
-      <meta name="keywords" content={post.title}/>
-      <meta name="author" content="zoffy"/>
-      <meta property="og:title" content={post.title}/>
-      <meta property="og:description" content={post.content.slice(0, 150)}/>
-      <meta property="og:type" content="article"/>
-      <meta property="og:url" content="https://zoffy.me"/>
+      <meta name="description" content={post.content.slice(0, 150)} />
+      <meta name="keywords" content={post.title} />
+      <meta name="author" content="zoffy" />
+      <meta property="og:title" content={post.title} />
+      <meta property="og:description" content={post.content.slice(0, 150)} />
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="https://zoffy.me" />
     </Head>
 
     <div className="flex flex-col mb-2">
@@ -32,7 +32,7 @@ const PostDetail: NextPageWithLayout<{ post: Post }> = ({ post }) => (
       </div>
     </div>
 
-    <br/>
+    <br />
     {
       post.reactions.total_count > 0
         ? <Reactions
@@ -48,11 +48,13 @@ const PostDetail: NextPageWithLayout<{ post: Post }> = ({ post }) => (
         /> : null
     }
 
-    <Markdown className="font-normal">
-      {post.content}
-    </Markdown>
-    <br/>
-    <Comments issueNumber={post.id}/>
+    <div className="font-normal">
+      <Markdown>
+        {post.content}
+      </Markdown>
+    </div>
+    <br />
+    <Comments issueNumber={post.id} />
 
     <Link href="/"
       className="float-right mt-10 sm:text-2xl text-xl text-gray-500 hover:text-black transition-colors duration-200 dark:text-gray-400 dark:hover:text-gray-100">
@@ -61,7 +63,7 @@ const PostDetail: NextPageWithLayout<{ post: Post }> = ({ post }) => (
   </div>
 );
 
-PostDetail.getLayout = page => <Layout middle={page}/>;
+PostDetail.getLayout = page => <Layout middle={page} />;
 
 // get all the posts id from the github issues
 export const getStaticPaths = async () => ({
