@@ -4,10 +4,87 @@
         <description><![CDATA[No fear of words, no fear of years.]]></description>
         <link>https://zoffy.me</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 12 Aug 2025 14:35:56 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 18 Aug 2025 14:55:22 GMT</lastBuildDate>
         <atom:link href="https://zoffy.me/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 12 Aug 2025 14:35:56 GMT</pubDate>
+        <pubDate>Mon, 18 Aug 2025 14:55:22 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2025, z0ffy]]></copyright>
         <language><![CDATA[zh-CN]]></language>
+        <item>
+            <title><![CDATA[【Electron】是否在 Electron 中运行]]></title>
+            <description><![CDATA[前端]]></description>
+            <link>https://zoffy.me/post/【Electron】是否在 Electron 中运行</link>
+            <guid isPermaLink="true">https://zoffy.me/post/【Electron】是否在 Electron 中运行</guid>
+            <pubDate>Mon, 07 Apr 2025 08:04:08 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[【小程序】播放 pcm 流]]></title>
+            <description><![CDATA[前端]]></description>
+            <link>https://zoffy.me/post/【小程序】播放 pcm 流</link>
+            <guid isPermaLink="true">https://zoffy.me/post/【小程序】播放 pcm 流</guid>
+            <pubDate>Wed, 01 Jan 2025 17:32:02 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[【OSS】前端直传 oss]]></title>
+            <description><![CDATA[前端]]></description>
+            <link>https://zoffy.me/post/【OSS】前端直传 oss</link>
+            <guid isPermaLink="true">https://zoffy.me/post/【OSS】前端直传 oss</guid>
+            <pubDate>Tue, 03 Dec 2024 09:20:59 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[【更新提醒】Web 实现更新提醒]]></title>
+            <description><![CDATA[前端]]></description>
+            <link>https://zoffy.me/post/【更新提醒】Web 实现更新提醒</link>
+            <guid isPermaLink="true">https://zoffy.me/post/【更新提醒】Web 实现更新提醒</guid>
+            <pubDate>Tue, 26 Nov 2024 09:54:21 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[【Vue】Vue3 重置组件状态]]></title>
+            <description><![CDATA[前端, vue]]></description>
+            <link>https://zoffy.me/post/【Vue】Vue3 重置组件状态</link>
+            <guid isPermaLink="true">https://zoffy.me/post/【Vue】Vue3 重置组件状态</guid>
+            <pubDate>Fri, 22 Nov 2024 03:32:59 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[【Wasm】SharedArrayBuffer(SAB) is not defined]]></title>
+            <description><![CDATA[前端]]></description>
+            <link>https://zoffy.me/post/【Wasm】SharedArrayBuffer(SAB) is not defined</link>
+            <guid isPermaLink="true">https://zoffy.me/post/【Wasm】SharedArrayBuffer(SAB) is not defined</guid>
+            <pubDate>Mon, 18 Nov 2024 10:16:31 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[【React hack】在 React 中模拟触发输入]]></title>
+            <description><![CDATA[前端, react]]></description>
+            <link>https://zoffy.me/post/【React hack】在 React 中模拟触发输入</link>
+            <guid isPermaLink="true">https://zoffy.me/post/【React hack】在 React 中模拟触发输入</guid>
+            <pubDate>Mon, 11 Nov 2024 15:53:16 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[【🗑️】回收站]]></title>
+            <description><![CDATA[杂记]]></description>
+            <link>https://zoffy.me/post/【🗑️】回收站</link>
+            <guid isPermaLink="true">https://zoffy.me/post/【🗑️】回收站</guid>
+            <pubDate>Thu, 07 Nov 2024 01:51:26 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[【Vue router】动态路由匹配下的权限处理]]></title>
+            <description><![CDATA[前端]]></description>
+            <link>https://zoffy.me/post/【Vue router】动态路由匹配下的权限处理</link>
+            <guid isPermaLink="true">https://zoffy.me/post/【Vue router】动态路由匹配下的权限处理</guid>
+            <pubDate>Wed, 06 Nov 2024 08:36:19 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[【秒级】获取视频时刻图]]></title>
+            <description><![CDATA[前端]]></description>
+            <link>https://zoffy.me/post/【秒级】获取视频时刻图</link>
+            <guid isPermaLink="true">https://zoffy.me/post/【秒级】获取视频时刻图</guid>
+            <pubDate>Mon, 28 Oct 2024 08:58:43 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[【Plugin】Vite Javascript obfuscator]]></title>
+            <description><![CDATA[前端]]></description>
+            <link>https://zoffy.me/post/【Plugin】Vite Javascript obfuscator</link>
+            <guid isPermaLink="true">https://zoffy.me/post/【Plugin】Vite Javascript obfuscator</guid>
+            <pubDate>Fri, 25 Oct 2024 03:29:18 GMT</pubDate>
+        </item>
     </channel>
 </rss>
