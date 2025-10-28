@@ -4,11 +4,18 @@
         <description><![CDATA[No fear of words, no fear of years.]]></description>
         <link>https://zoffy.me</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 27 Oct 2025 12:17:26 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 28 Oct 2025 03:04:40 GMT</lastBuildDate>
         <atom:link href="https://zoffy.me/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 27 Oct 2025 12:17:26 GMT</pubDate>
+        <pubDate>Tue, 28 Oct 2025 03:04:40 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2025, z0ffy]]></copyright>
         <language><![CDATA[zh-CN]]></language>
+        <item>
+            <title><![CDATA[【AI】Vibe Coding 开发资源]]></title>
+            <description><![CDATA[ai]]></description>
+            <link>https://zoffy.me/post/【AI】Vibe Coding 开发资源</link>
+            <guid isPermaLink="true">https://zoffy.me/post/【AI】Vibe Coding 开发资源</guid>
+            <pubDate>Tue, 28 Oct 2025 03:04:08 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[【Electron】是否在 Electron 中运行]]></title>
             <description><![CDATA[前端]]></description>
