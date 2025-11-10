@@ -4,11 +4,18 @@
         <description><![CDATA[No fear of words, no fear of years.]]></description>
         <link>https://zoffy.me</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 28 Oct 2025 03:04:47 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 10 Nov 2025 02:00:31 GMT</lastBuildDate>
         <atom:link href="https://zoffy.me/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 28 Oct 2025 03:04:47 GMT</pubDate>
+        <pubDate>Mon, 10 Nov 2025 02:00:31 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2025, z0ffy]]></copyright>
         <language><![CDATA[zh-CN]]></language>
+        <item>
+            <title><![CDATA[【DEV】提升开发效率的利器：code-inspector-plugin]]></title>
+            <description><![CDATA[前端]]></description>
+            <link>https://zoffy.me/post/【DEV】提升开发效率的利器：code-inspector-plugin</link>
+            <guid isPermaLink="true">https://zoffy.me/post/【DEV】提升开发效率的利器：code-inspector-plugin</guid>
+            <pubDate>Mon, 10 Nov 2025 01:59:58 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[【AI】Vibe Coding 开发资源]]></title>
             <description><![CDATA[ai]]></description>
