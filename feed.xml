@@ -4,11 +4,18 @@
         <description><![CDATA[No fear of words, no fear of years.]]></description>
         <link>https://zoffy.me</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 25 Nov 2025 02:22:45 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 27 Nov 2025 06:19:30 GMT</lastBuildDate>
         <atom:link href="https://zoffy.me/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 25 Nov 2025 02:22:45 GMT</pubDate>
+        <pubDate>Thu, 27 Nov 2025 06:19:30 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2025, z0ffy]]></copyright>
         <language><![CDATA[zh-CN]]></language>
+        <item>
+            <title><![CDATA[【LPR】Linux/macOS 下的打印瑞士军刀]]></title>
+            <description><![CDATA[杂记]]></description>
+            <link>https://zoffy.me/post/【LPR】Linux/macOS 下的打印瑞士军刀</link>
+            <guid isPermaLink="true">https://zoffy.me/post/【LPR】Linux/macOS 下的打印瑞士军刀</guid>
+            <pubDate>Thu, 27 Nov 2025 06:19:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[【Surge】多订阅分流配置]]></title>
             <description><![CDATA[杂记]]></description>
