@@ -4,11 +4,18 @@
         <description><![CDATA[No fear of words, no fear of years.]]></description>
         <link>https://zoffy.me</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 15 Dec 2025 14:47:02 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 17 Dec 2025 09:29:09 GMT</lastBuildDate>
         <atom:link href="https://zoffy.me/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 15 Dec 2025 14:47:02 GMT</pubDate>
+        <pubDate>Wed, 17 Dec 2025 09:29:09 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2025, z0ffy]]></copyright>
         <language><![CDATA[zh-CN]]></language>
+        <item>
+            <title><![CDATA[【ACP】WebStorm + Claude Code]]></title>
+            <description><![CDATA[ai]]></description>
+            <link>https://zoffy.me/post/【ACP】WebStorm + Claude Code</link>
+            <guid isPermaLink="true">https://zoffy.me/post/【ACP】WebStorm + Claude Code</guid>
+            <pubDate>Wed, 17 Dec 2025 09:28:39 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[【LPR】macOS 下的打印瑞士军刀]]></title>
             <description><![CDATA[杂记]]></description>
