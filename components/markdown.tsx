@@ -62,7 +62,6 @@ const Hx: HeadingComponent = ({
 }
 
 const Code: CodeComponent = ({
-  inline = '',
   className = '',
   children = '',
   ...properties
@@ -71,13 +70,15 @@ const Code: CodeComponent = ({
     theme,
     setTheme
   } = useTheme()
-  const match = /language-(\w+)/.exec(className || '') || ['', 'shell']
+  const match = /language-(\w+)/.exec(className || '')
+  // 有 language-xxx 类名或内容包含换行符则为代码块
+  const isCodeBlock = Boolean(match) || String(children).includes('\n')
 
   useEffect(() => {
     setTheme(theme!)
   }, [setTheme, theme])
 
-  return (!inline)
+  return (isCodeBlock)
     ? (
       <SyntaxHighlighter
         showLineNumbers
@@ -85,7 +86,7 @@ const Code: CodeComponent = ({
         codeTagProps={{
           className: 'font-en text-md',
         }}
-        language={match[1]}
+        language={match?.[1] || 'shell'}
         PreTag="div"
         customStyle={
           {
