@@ -101,8 +101,8 @@ const Code: CodeComponent = ({
       </SyntaxHighlighter>
     )
     : (
-      <code className="text-gray-600 dark:text-white" {...properties}>
-        `{children}`
+      <code className="text-gray-600 dark:text-gray-200 bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded" {...properties}>
+        {children}
       </code>
     )
 }
