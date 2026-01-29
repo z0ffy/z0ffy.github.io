@@ -4,11 +4,18 @@
         <description><![CDATA[No fear of words, no fear of years.]]></description>
         <link>https://zoffy.me</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 24 Jan 2026 05:44:04 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 29 Jan 2026 05:37:15 GMT</lastBuildDate>
         <atom:link href="https://zoffy.me/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 24 Jan 2026 05:44:04 GMT</pubDate>
+        <pubDate>Thu, 29 Jan 2026 05:37:15 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2026, z0ffy]]></copyright>
         <language><![CDATA[zh-CN]]></language>
+        <item>
+            <title><![CDATA[【Mac】cpu压力测试]]></title>
+            <description><![CDATA[杂记]]></description>
+            <link>https://zoffy.me/post/【Mac】cpu压力测试</link>
+            <guid isPermaLink="true">https://zoffy.me/post/【Mac】cpu压力测试</guid>
+            <pubDate>Thu, 29 Jan 2026 05:36:47 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[【AI】提示词]]></title>
             <description><![CDATA[ai]]></description>
