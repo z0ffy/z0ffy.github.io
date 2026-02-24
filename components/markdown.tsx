@@ -1,5 +1,5 @@
 import {useTheme} from 'next-themes'
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import ReactMarkdown from 'react-markdown'
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import {a11yDark as dark, prism as light} from 'react-syntax-highlighter/dist/cjs/styles/prism'
@@ -66,45 +66,57 @@ const Code: CodeComponent = ({
   children = '',
   ...properties
 }) => {
-  const {
-    theme,
-    setTheme
-  } = useTheme()
+  const {theme, setTheme} = useTheme()
+  const [copied, setCopied] = useState(false)
   const match = /language-(\w+)/.exec(className || '')
-  // 有 language-xxx 类名或内容包含换行符则为代码块
   const isCodeBlock = Boolean(match) || String(children).includes('\n')
 
   useEffect(() => {
     setTheme(theme!)
   }, [setTheme, theme])
 
-  return (isCodeBlock)
-    ? (
-      <SyntaxHighlighter
-        showLineNumbers
-        style={theme === 'dark' ? dark as any : light as any}
-        codeTagProps={{
-          className: 'font-en text-md',
-        }}
-        language={match?.[1] || 'shell'}
-        PreTag="div"
-        customStyle={
-          {
-            borderRadius: '0.5rem',
-            margin: '1.8rem 0',
-          }
-        }
-        {...properties}
-      >
-        {String(children)
-          .replace(/\n$/, '')}
-      </SyntaxHighlighter>
-    )
-    : (
+  const handleCopy = async () => {
+    const text = String(children).replace(/\n$/, '')
+    try {
+      await navigator.clipboard.writeText(text)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 1500)
+    } catch {
+      setCopied(false)
+    }
+  }
+
+  if (!isCodeBlock) {
+    return (
       <code className="text-gray-600 dark:text-gray-200 bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded" {...properties}>
         {children}
       </code>
     )
+  }
+
+  return (
+    <div className="group relative my-6">
+      <button
+        type="button"
+        onClick={handleCopy}
+        className="absolute top-2 right-2 z-10 rounded px-2 py-1 text-xs font-medium opacity-0 transition-opacity focus:opacity-100 focus:outline-none group-hover:opacity-100 bg-gray-200/90 hover:bg-gray-300 dark:bg-gray-700/90 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200"
+        aria-label="Copy code"
+      >
+        {copied ? 'Copied!' : 'Copy'}
+      </button>
+      <SyntaxHighlighter
+        showLineNumbers
+        style={theme === 'dark' ? dark as any : light as any}
+        codeTagProps={{className: 'font-en text-md'}}
+        language={match?.[1] || 'shell'}
+        PreTag="div"
+        customStyle={{borderRadius: '0.5rem', margin: 0}}
+        {...properties}
+      >
+        {String(children).replace(/\n$/, '')}
+      </SyntaxHighlighter>
+    </div>
+  )
 }
 
 const Li: LiComponent = ({
