@@ -191,7 +191,7 @@ const BlockQuote: React.FC<Pick<DetailedHTMLProps<BlockquoteHTMLAttributes<HTMLQ
 )
 
 const Hr: React.FC<Pick<DetailedHTMLProps<HTMLAttributes<HTMLHRElement>, HTMLHRElement>, 'key' | keyof HTMLAttributes<HTMLHRElement>> & ReactMarkdownProps> = ({...properties}) => (
-  <hr {...properties} className="border-gray-300 dark:border-gray-400 dark:border-dashed"/>
+  <hr {...properties} className="border-0 border-b border-gray-300 dark:border-gray-500 my-6 h-px" />
 )
 
 const Img: React.FC<Pick<DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>, 'key' | keyof ImgHTMLAttributes<HTMLImageElement>> & ReactMarkdownProps> = ({
