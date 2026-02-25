@@ -5,6 +5,7 @@ import { fetchPosts, fetchUser } from '../lib';
 import genRSS from '../lib/rss';
 
 import { useTheme } from 'next-themes';
+import { useEffect } from 'react';
 
 import Image from 'next/image';
 
@@ -27,7 +28,9 @@ export const getStaticProps: GetStaticProps = async () => {
 const Index: NextPageWithLayout<{ posts: Post[]; user: User }> = ({ posts, user }) => {
   const { setTheme } = useTheme();
 
-  if (process.env.theme !== 'both') setTheme(process.env.theme || 'dark');
+  useEffect(() => {
+    if (process.env.theme !== 'both') setTheme(process.env.theme || 'dark');
+  }, [setTheme]);
 
   return (
     <div>

@@ -1,5 +1,5 @@
 import {useTheme} from 'next-themes'
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import ReactMarkdown from 'react-markdown'
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import {a11yDark as dark, prism as light} from 'react-syntax-highlighter/dist/cjs/styles/prism'
@@ -66,14 +66,10 @@ const Code: CodeComponent = ({
   children = '',
   ...properties
 }) => {
-  const {theme, setTheme} = useTheme()
+  const {theme} = useTheme()
   const [copied, setCopied] = useState(false)
   const match = /language-(\w+)/.exec(className || '')
   const isCodeBlock = Boolean(match) || String(children).includes('\n')
-
-  useEffect(() => {
-    setTheme(theme!)
-  }, [setTheme, theme])
 
   const handleCopy = async () => {
     const text = String(children).replace(/\n$/, '')
