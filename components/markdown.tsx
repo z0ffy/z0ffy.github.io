@@ -116,11 +116,11 @@ const Code: CodeComponent = ({
 }
 
 const Li: LiComponent = ({
-  checked = '',
+  checked,
   children = ''
-}) => {
-  // ordered represents the order of the list item
-  if (checked !== null) {
+}: { checked?: boolean | null; children?: React.ReactNode }) => {
+  // task list item (has checked prop); render without list marker
+  if (checked !== undefined && checked !== null) {
     return (
       <li className="list-none my-1">
         {children}
@@ -206,12 +206,15 @@ const Img: React.FC<Pick<DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, 
   src,
   title,
   alt
-}) => (
-  // eslint-disable-next-line @next/next/no-img-element
-  <img src={src!} className="w-11/12 lg:w-2/3 mx-auto my-3 rounded-lg" loading="lazy" alt={alt}
-    title={title}
-  />
-)
+}) => {
+  if (!src) return null
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img src={src} className="w-11/12 lg:w-2/3 mx-auto my-3 rounded-lg" loading="lazy" alt={alt ?? ''}
+      title={title ?? undefined}
+    />
+  )
+}
 
 const Table: React.FC<Pick<DetailedHTMLProps<TableHTMLAttributes<HTMLTableElement>, HTMLTableElement>, 'key' | keyof TableHTMLAttributes<HTMLTableElement>> & ReactMarkdownProps> = ({
   children,

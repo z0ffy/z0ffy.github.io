@@ -2,9 +2,7 @@ import { isGithubChannel, isSpecialRepo } from '../lib';
 
 import { Head, Html, Main, NextScript } from 'next/document';
 
-import type { NextPage } from 'next';
-
-const Document: NextPage = () => {
+const Document = () => {
   let href = '/favicon.ico';
   if (isGithubChannel() && !isSpecialRepo()) href = './favicon.ico';
 

@@ -15,7 +15,7 @@ const PostDetail: NextPageWithLayout<{ post: Post }> = ({ post }) => (
       <title>{post.title}</title>
       <meta name="description" content={post.content.slice(0, 150)} />
       <meta name="keywords" content={post.title} />
-      <meta name="author" content="zoffy" />
+      <meta name="author" content={post.author} />
       <meta property="og:title" content={post.title} />
       <meta property="og:description" content={post.content.slice(0, 150)} />
       <meta property="og:type" content="article" />
@@ -73,14 +73,9 @@ export const getStaticPaths = async () => ({
 
 export const getStaticProps = async ({ params }: { params: { id: string } }) => {
   const { id } = params;
-
   const post = await fetchPost(id);
-
-  return {
-    props: {
-      post,
-    },
-  };
+  if (!post) return { notFound: true };
+  return { props: { post } };
 };
 
 export default PostDetail;

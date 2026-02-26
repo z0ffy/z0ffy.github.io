@@ -92,7 +92,7 @@ export const fetchPostsByTag = async (tag: string) => {
   const {data} = await cli.rest.issues.listForRepo({
     owner: process.env.OWNER!,
     repo: process.env.REPO!,
-    labels: [process.env.LABELS!.split(','), tag].join(','),
+    labels: [...process.env.LABELS!.split(','), tag].join(','),
     per_page: 100,
     state: 'all'
   })
