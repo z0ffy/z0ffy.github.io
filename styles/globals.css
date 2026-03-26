@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 
-@custom-variant dark (&:is([data-theme="dark"] *));
+/* Match next-themes `attribute="class"` (html.dark) */
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --font-*: initial;

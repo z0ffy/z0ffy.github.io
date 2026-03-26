@@ -4,12 +4,12 @@ import Sun from './icons/sun';
 import { useTheme } from 'next-themes';
 
 const Theme = () => {
-  const { theme, setTheme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
 
   if (process.env.theme !== 'both') return <></>;
 
   return (
-    theme === 'light'
+    resolvedTheme === 'light'
       ? <Moon width="2em" height="2em" onClick={() => setTheme('dark')}/>
       : <Sun width="2em" height="2em" onClick={() => setTheme('light')}/>
   );
