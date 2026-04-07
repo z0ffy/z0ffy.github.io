@@ -42,10 +42,7 @@ export const fetchPosts = async () => {
       reactions: {
         ...p.reactions!,
       },
-      labels: p.labels!.map((l: { name: string }) => {
-        const r = l as { name: string }
-        return r.name
-      }),
+      labels: (p.labels as { name: string }[]).map((l) => l.name),
     })
   }
 
@@ -109,10 +106,7 @@ export const fetchPostsByTag = async (tag: string) => {
       reactions: {
         ...p.reactions!,
       },
-      labels: p.labels!.map((l: { name: string }) => {
-        const r = l as { name: string }
-        return r.name
-      }),
+      labels: (p.labels as { name: string }[]).map((l) => l.name),
     })
   }
 
