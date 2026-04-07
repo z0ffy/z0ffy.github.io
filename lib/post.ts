@@ -76,7 +76,7 @@ export const fetchTagPaths = async () => {
 
   const specialTags = process.env.LABELS!.split(',')
 
-  return [...tags].filter(tag => !specialTags.includes(tag))
+  return Array.from(tags).filter(tag => !specialTags.includes(tag))
     .map(tag => ({
       params: {
         id: tag,
