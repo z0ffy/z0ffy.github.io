@@ -6,7 +6,7 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "fix": "eslint --fix ."
   },
   "dependencies": {
@@ -24,8 +24,7 @@
     "sakana-widget": "^2.7.1"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.5",
-    "@eslint/js": "^10.0.1",
+    "@eslint/js": "^9.0.0",
     "@next/eslint-plugin-next": "^16.2.2",
     "@next/third-parties": "16.2.2",
     "@tailwindcss/postcss": "^4.2.2",
@@ -34,7 +33,7 @@
     "@types/react-dom": "19.2.3",
     "@types/react-syntax-highlighter": "^15.5.13",
     "@types/rss": "^0.0.32",
-    "eslint": "10.2.0",
+    "eslint": "9.39.4",
     "eslint-config-next": "16.2.2",
     "eslint-plugin-react-hooks": "^7.0.1",
     "next-sitemap": "^4.2.3",
