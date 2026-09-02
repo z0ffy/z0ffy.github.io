@@ -4,11 +4,18 @@
         <description><![CDATA[No fear of words, no fear of years.]]></description>
         <link>https://zoffy.me</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 27 Aug 2026 02:14:21 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 02 Sep 2026 05:36:27 GMT</lastBuildDate>
         <atom:link href="https://zoffy.me/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 27 Aug 2026 02:14:21 GMT</pubDate>
+        <pubDate>Wed, 02 Sep 2026 05:36:27 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2026, z0ffy]]></copyright>
         <language><![CDATA[zh-CN]]></language>
+        <item>
+            <title><![CDATA[【AI】AI 助手不只是聊天窗口：一次业务化落地的设计思考]]></title>
+            <description><![CDATA[ai]]></description>
+            <link>https://zoffy.me/post/【AI】AI 助手不只是聊天窗口：一次业务化落地的设计思考</link>
+            <guid isPermaLink="true">https://zoffy.me/post/【AI】AI 助手不只是聊天窗口：一次业务化落地的设计思考</guid>
+            <pubDate>Wed, 02 Sep 2026 05:35:59 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[【Session】让 AI Agent 在有限窗口中持续工作]]></title>
             <description><![CDATA[ai]]></description>
